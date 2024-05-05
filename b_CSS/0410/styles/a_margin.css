@@ -1,0 +1,36 @@
+div{
+  width: 100px;
+  height: 100px;
+  border: 1px solid #222;
+}
+
+/* 상하좌우에 같은 크기의 마진 */
+#margin1{
+  margin: 50px;
+}
+/* 상하/좌우 */
+#margin2{
+  margin: 30px 50px;
+}
+
+/* 상 좌우 하 */
+#margin3{
+  margin: 30px 20px 50px;
+}
+
+/* 상 하 좌 우 */
+#margin4{
+  margin: 30px 20px 50px 40px;
+}
+
+/* 각 방향에 대한 마진 설정 */
+#margin5{
+  margin-left: 50px;
+}
+
+
+
+.spacer{
+  margin: 1px;
+  border: 1px solid black;
+}

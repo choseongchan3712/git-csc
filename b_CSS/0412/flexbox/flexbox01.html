@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flexbox01.html</title>
+  <style>
+    .flexbox{
+      display: flex;
+      background-color: lightblue;
+      padding: 30px;
+      font-size: 20px;
+
+      flex-direction: row;
+      /* flex-direction: row-reverse;
+      flex-direction: column;
+      flex-direction: column-reverse; */
+      flex-wrap: wrap;
+      /* flex-wrap: wrap-reverse; */
+      
+    }
+    .box{
+      background-color: steelblue;
+      margin: 10px;
+      padding: 20px;
+      font-size: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="flexbox">
+    <div class="box">box 1</div>
+    <div class="box">box 2</div>
+    <div class="box">box 3</div>
+    <div class="box">box 4</div>
+    <div class="box">box 5</div>
+  </div>
+</body>
+</html>

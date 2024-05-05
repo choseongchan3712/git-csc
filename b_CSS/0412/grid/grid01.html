@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>grid01.html</title>
+  <style>
+    body{
+      width: 90%;
+      max-width: 900px;
+      margin: 20px auto;
+      height: 300px;
+    }
+
+    .container{
+      height: 100%;
+      display: grid;
+      /* grid-template-columns: 200px 200px 200px; */
+      /* column-gap: 10px;
+      row-gap: 20px; */
+      grid-template-columns: repeat(3, minmax(100px, 300px));
+      gap: 20px 10px;
+      grid-auto-rows: minmax(100px, auto);
+    }
+
+    .container>div{
+      text-align: center;
+      border: 2px solid lightcoral;
+      padding: 10px;
+      background-color: skyblue;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+  </div>
+</body>
+</html>

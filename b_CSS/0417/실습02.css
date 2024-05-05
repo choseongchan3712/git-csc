@@ -1,0 +1,249 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+/* ! 스크롤바 기능 사용하되 보이지 않게 하는 방법 */
+/* chrome, safari-> (::-webkit-scrollbar)-> display: none */
+
+/* 모든 요소 스크롤바 숨김 */
+::-webkit-scrollbar{
+  display: none;
+}
+
+/* 특정 요소에만 숨김 */
+body::-webkit-scrollbar{
+  display: none;
+}
+
+/* edge, firefox */
+body{
+  overflow: auto;
+  /* ! edge */
+  -ms-overflow-style: none;
+  /* ! firefox */
+  scrollbar-width: none;
+}
+
+
+
+
+body, html{
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+header{
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
+
+.logo{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links{
+  list-style: none;
+}
+
+.nav-links li{
+  display: inline;
+  margin-left: 20px;
+}
+
+.nav-links a{
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.menu-toggle{
+  display: none;
+  /* !왜 다시 보이게 할꺼면서? */
+  /* 숨김 */
+  font-size: 30px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-links{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 60px;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    transition: max-hight 0.3s ease-in-out;
+    max-height: 0;
+  }
+  .nav-links li{
+    width: 100%;
+    margin: 15px 0;
+  }
+
+  .nav-links a{
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu-toggle{
+    display: block;
+    /* ! */
+  }
+}
+
+section{
+  padding: 50px 20px;
+  padding-top: 50px;
+  transition: padding-top 0.3s ease, background-color 0.3s ease;
+}
+
+section:target{
+  padding-top: 70px;
+  background-color: #f0f0f0;
+}
+
+
+.banner {
+  background: url(../../images/cat01.jpg) no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: relative;
+}
+
+.banner h1, .banner p{
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  animation: fadeinup 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeinup{
+  from{
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#about img{
+  width: 90%;
+  max-width: 600px;
+  height: auto;
+  transition: transform 0.3s ease-in-out opacity 0.3s ease-in-out;
+}
+
+#about img:hover{
+  transform: scale(1.1);
+  opacity: 0.7;
+  z-index: 0;
+}
+
+.portfolio-container, .services-container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.portfolio-item, .service{
+  margin: 10px;
+  flex-basis:30%;
+  /* ! */
+  text-align: center;
+  /* width: 200px;
+  height: 100px;
+  border: 1px solid black;
+  border-radius: 5px; */
+}
+
+.portfolio-item img{
+  width: 100%;
+}
+
+.services{
+  width: 200px;
+  height: 100px;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact{
+  background-color: #f8f9fa;
+  padding: 50px 20px;
+  text-align: center;
+  color: #333;
+}
+
+#contact h2{
+  color: #0056b3;
+  margin: 20px;
+}
+
+#contact p{
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+#contact form{
+  max-width: 500px;
+  margin: auto;
+}
+
+#contact input, #contact textarea{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#contact button{
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contact button:hover{
+  background-color: #0056b3;
+}
+
+footer{
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}

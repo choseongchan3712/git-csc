@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>a_hyperlink.html</title>
+</head>
+<body>
+  <!--
+    절대경로: 전체 url을 명시
+    상대경로: 현제 문서 위치를 기준으로 위치 지정
+
+  -->
+
+  <!-- 절대경로 -->
+
+  <h2 id="heading2">Absolute urls</h2>
+  <p id="w3c"><a href="https://www.w3.org">w3c</a></p>
+  <p><a href="https://www.google.com">google</a></p>
+
+  <!-- 상대경로 
+  디렉토리(폴더)
+  - 같은 디렉토리에 있는 파일
+    ./파일명
+  - 상위 디렉토리에 있는 파일
+    ../파일명
+  - 하위 ...
+    ./.../파일명
+  -->
+  <p><a href="../상위.jpg">상위 디렉토리 이미지 링크</a></p>
+  <p><a href="./현재.jpg">현재 디렉토리 이미지 링크</a></p>
+  <p><a href="현재.jpg">현재 디렉토리 이미지 링크</a></p>
+  <p><a href="./subdirectory/하위.jpg">하위 디렉토리 이미지 링크</a></p>
+
+  <p><a href="../../index.html">root</a></p>
+  <p><a href="../0328/a_text.html">0328폴더 a_text.html</a></p>
+
+  <!-- 현재 문서, 이메일 링크 -->
+
+  <a href="#heading2">heading2 이동</a>
+  <br />
+
+  <a href="#w3c">w3c 이동</a>
+
+  <br />
+  <a href="mailto:devgiants75@naver.com">devgiants75 이메일 보내기</a>
+
+
+
+</body>
+</html>

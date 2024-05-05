@@ -1,0 +1,35 @@
+#section1:target {
+  background-color: black;
+}
+
+#section2:target {
+  background-color: blue;
+}
+
+/* :enabled, :disabled */
+input:enabled {
+  /* 사용자가 입력 가능 */
+  background-color: lightgreen;
+}
+
+input:disabled {
+  /* 사용자가 입력 불가능 */
+  background-color: lightgray;
+}
+
+input:checked{
+  outline: 5px solid green;
+}
+
+input:checked + label{
+  color: red;
+}
+
+/* not */
+input:not([type=checkbox]){
+  border: 5px solid black;
+}
+
+*:not(h2){
+  font-size: 12px;
+}

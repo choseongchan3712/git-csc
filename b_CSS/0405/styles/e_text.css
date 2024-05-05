@@ -1,0 +1,78 @@
+#a{
+  font-size: 10px;
+  font-style: normal;
+  font-weight: normal;
+}
+#b{
+  font-size: 16px;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+#b:hover{
+  font-style: normal;
+}
+
+#c{
+  font-size: 20px;
+  font-style: oblique;
+  font-weight: bolder;
+}
+#d{
+  font-size: xx-small;
+  font-weight: 100;
+}
+#e{
+  font-size: medium;
+  font-weight: 400;
+}
+#f{
+  font-size: xx-large;
+  font-weight: 900;
+}
+
+/* 글꼴 */
+#family1{
+  font-family: 돋음, 굴림, "맑은 고딕";
+}
+
+@font-face {
+  font-family: 'Ownglyph_Dailyokja-Rg';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2403@1.0/Ownglyph_Dailyokja-Rg.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#family2{
+  font-family: 'Ownglyph_Dailyokja-Rg';
+}
+
+@font-face {
+  font-family: 'TTHakgyoansimSamulhamR';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_keris@1.0/TTHakgyoansimSamulhamR.woff2') format('woff2');
+  font-weight: lighter;
+  font-style: italic;
+}
+
+#family3{
+  font-family: 'TTHakgyoansimSamulhamR';
+}
+
+@font-face{
+  font-family: 'SokchoBadaDotum';
+  src: url(../../../font/속초바다돋움체/OTF/SokchoBadaDotum.otf) format('opentype');
+  font-style: normal;
+  font-weight: normal;
+}
+#family4{
+  font-family: 'SokchoBadaDotum';
+}
+
+#family5font-family: 'WavvePADO-Regular';
+
+@font-face{
+  font-family: 'SokchoBadaDotum';
+  src: url(../../../font/WavvePADO-Regular.otf) format('opentype');
+  font-style: normal;
+  font-weight: normal;
+}

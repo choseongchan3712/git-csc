@@ -1,0 +1,22 @@
+*{
+  background-color: bisque;
+}
+
+p:first-child{
+  color: blue;
+}
+
+p:last-child{
+  color: red;
+}
+
+p:nth-of-type(2){
+  color: green;
+}
+.container p:nth-of-type(3){
+  background-color: green;
+}
+
+p:not(.special){
+  background-color: yellow;
+}

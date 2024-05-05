@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    table {
+      border: 2px solid black;
+      border-collapse: collapse;
+    }
+
+    tr, th, td{
+      border: 1px solid black;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- !기본형 -->
+  <table>
+    <caption>표 제목(위에표시)</caption>
+    <tr>
+      <th>목록 1열</th>
+      <th>목록 2열</th>
+    </tr>
+    <tr>
+      <td>1행 1열</td>
+      <td>1행 2열</td>
+    </tr>
+    <tr>
+      <td>2행 1열</td>
+      <td>2행 2열</td>
+    </tr>
+    <caption style="caption-side: bottom;">표 제목(아래표시)</caption>
+  </table>
+
+  <!-- !표만들기 p91 -->
+  <h1>상품 구성</h1>
+  <table>
+    <caption>선물과 가정용 상품 구성</caption>
+    <tr>
+      <th>용도</th>
+      <th>중량</th>
+      <th>개수</th>
+      <th>가격</th>
+    </tr>
+    <tr>
+      <td>선물용</td>
+      <td>3kg</td>
+      <td>11~16과</td>
+      <td>35,000원</td>
+    </tr>
+    <tr>
+      <td>선물용</td>
+      <td>5kg</td>
+      <td>18~26과</td>
+      <td>52,000원</td>
+    </tr>
+    <tr>
+      <td>가정용</td>
+      <td>3kg</td>
+      <td>11~16과</td>
+      <td>30,000원</td>
+    </tr>
+    <tr>
+      <td>가정용</td>
+      <td>5kg</td>
+      <td>18~26과</td>
+      <td>47,000원</td>
+    </tr>
+    
+  </table>
+  <br />
+  <br />
+  <hr />
+
+  <!-- !colspan rowxpan -->
+  <!-- ?1행 1열과 1행 2열 합치기 -->
+  <!-- ?2행 1열과 3행 1열 합치기 -->
+  <table>
+    <caption>rowspan, colspan</caption>
+    <tr>
+      <td colspan="2">1행 1열</td>
+      
+      <td>1행 3열</td>
+    </tr>
+    <tr>
+      <td rowspan="2">2행 1열</td>
+      <td>2행 2열</td>
+      <td>2행 3열</td>
+    </tr>
+    <tr>
+      
+      <td>3행 2열</td>
+      <td>3행 3열</td>
+    </tr>
+  </table>
+  
+</body>
+</html>

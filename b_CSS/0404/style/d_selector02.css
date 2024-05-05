@@ -1,0 +1,27 @@
+section{
+  width: 600px;
+}
+
+p{
+  width: 500px;
+  border: 1px solid black;
+}
+
+/* 자손 */
+section p{
+  color: blue;
+}
+/* 자식 */
+section>p{
+  color: tomato;
+}
+/* 인접 형제(바로 밑) */
+h1+p{
+  background-color: blueviolet;
+  color: white;
+}
+/* 형제 */
+h1~p{
+  background-color: black;
+  color: white;
+}

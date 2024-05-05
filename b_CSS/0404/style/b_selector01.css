@@ -1,0 +1,67 @@
+/* 전체선택자 */
+*{
+  margin: 0;
+  padding: 0;
+  color: red;
+}
+
+body{
+  background-color: aliceblue;
+}
+
+#universal{
+  border: 1px solid black;
+}
+
+/* 타입선택자 */
+h2{
+  color: blue;
+}
+p{
+  color: green;
+  font-size: 20px;
+}
+ul{
+  background-color: lightcoral;
+}
+li{
+  list-style-type: square;
+  color: white;
+}
+
+/* 클래스 선택자 */
+.btn{
+  padding: 10px;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid black;
+}
+.primary{
+  background-color: blue;
+  color: white;
+}
+.secondary{
+  background-color: gray;
+  color: white;
+}
+
+/* 아이디 선택자 */
+#featured-article{
+  background-color: brown;
+  padding: 20px;
+}
+
+/* 그룹 선택자 */
+#header, footer{
+  background-color: lightgray;
+  color: black;
+  padding: 20px;
+  text-align: center;
+}
+
+header{
+  border-bottom: 2px solid black;
+}
+footer{
+  border-top: 2px solid red;
+}

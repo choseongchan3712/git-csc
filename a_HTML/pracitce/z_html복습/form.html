@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form.html</title>
+</head>
+<body>
+  <h1>HTML Form 기초</h1>
+  <form>
+    <label for="이름">이름:</label>
+    <input type="text" id="이름" />
+    <br />
+    <label for="나이">나이:</label>
+    <input type="text" id="나이" />
+    <br />
+    <label for="이메일">이메일:</label>
+    <input type="email" id="이메일" />
+    <br />
+    <input type="submit" value="제출" />
+  </form>
+
+  <h2>설문지 형식의 Form</h2>
+  <p>당신의 연령대는 무엇입니까?</p>
+  <form>
+    <input type="radio" id="20대" name="연령" />
+    <label for="20대">20대</label>
+    
+    <br />
+    <input type="radio" id="30대" name="연령" />
+    <label for="30대">30대</label>
+    
+    <br />
+    <input type="radio" id="40대 이상" name="연령" />
+    <label for="40대 이상">40대 이상</label>
+
+    <p>관심있는 분야를 모두 선택해주세요</p>
+    <label>
+      <input type="checkbox" value="IT">
+      IT
+    </label>
+    <br />
+    <label>
+      <input type="checkbox" value="여행">
+      여행
+    </label>
+    <br />
+    <label>
+      <input type="checkbox" value="스포츠">
+      스포츠
+    </label>
+    <br />
+    <input type="submit" value="설문제출">
+
+  </form>
+</body>
+</html>

@@ -1,0 +1,31 @@
+ul{
+  list-style-type: square;
+  list-style-position: inside;
+}
+
+ul li:nth-child(1){
+  color: red;
+}
+ul li:nth-child(2){
+  color: green;
+}
+ul li:nth-child(3){
+  color: blue;
+}
+ul li :hover{
+  color: pink
+}
+
+ol{
+  list-style: lower-alpha outside;
+}
+
+l ol:nth-child(1){
+  color: red;
+}
+ul ol:nth-child(2){
+  color: green;
+}
+ol:nth-child(3){
+  color: blue;
+}

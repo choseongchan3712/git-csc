@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* table{
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    tr, td{
+      border: 1px solid black;
+      padding: 0;
+    }
+
+    .bt{
+      color: white;
+      background-color: black;
+    }
+
+    .loginbox{
+      border: 1px solid black;
+      text-align: center;
+      width: 400px;
+    } */
+
+
+  </style>
+</head>
+<body>
+  <!-- ! autofocus -->
+  <form action="">
+    <fieldset>
+      <legend>autofocus</legend>
+      <label><input type="text" autofocus></label>
+    </fieldset>
+  </form>
+
+  <br />
+  <hr />
+  <br />
+
+  <!-- ! placeholder -->
+  <form action="">
+    <fieldset>
+      <legend>placeholder</legend>
+      <div class="loginbox">
+        <div class="login">
+          <h1>LOGIN</h1>
+          <p>로그인을 하시면 더욱 편리하게 이용하실 수 있습니다</p>
+        </div>
+        <hr />
+
+        <div class="logininput">
+          <table>
+            <tr>
+              <td class="id"><input type="text" placeholder="아이디를 입력하세요."></td>
+              <td class="bt" rowspan="2">로그인</td>
+            </tr>
+            <tr>
+              <td class="pw"><input type="password" placeholder="비밀번호를 입력하세요"></td>
+              
+            </tr>
+          </table>
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+  <br />
+  <hr />
+  <br />
+
+  <!-- ! required -->
+  <div class="information" style="width: 420px;">
+    <form action="">
+      <fieldset>
+        <legend>배송 정보</legend>
+        <table>
+          <tr>
+            <td><label for="product">주문 상품</label></td>
+            <td><input type="text" id="product" value="상품용 3KG" readonly></td>
+          </tr>
+          <tr>
+            <td><label for="name">이름</label></td>
+            <td><input type="text" id="name" required></td>
+          </tr>
+          <tr>
+            <td><label for="address">배송주소</label></td>
+            <td><input type="text" id="address" required></td>
+          </tr>
+          <tr>
+            <td><label for="email">이메일</label></td>
+            <td><input type="email" id="email"></td>
+          </tr>
+          <tr>
+            <td><label for="number">연락처</label></td>
+            <td><input type="tel" id="number" value="'-'를 빼고 입력해 주세요"></td>
+          </tr>
+          <tr>
+            <td><label for="date">배송 지정</label></td>
+            <td><input type="date" id="product" value="상품용 3KG" readonly> <small>(주문일로부터 최소 3일 이후)</small></td>
+          </tr>
+        </table>
+      </fieldset>
+      <div>
+        <input type="submit" value="주문하기">
+        <input type="reset" value="취소하기">
+      </div>
+    </form>
+  </div>
+
+
+</body>
+</html>

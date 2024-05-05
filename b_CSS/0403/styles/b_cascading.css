@@ -1,0 +1,30 @@
+h1{
+  color: green;
+}
+#kbo{
+  color: blueviolet;
+}
+.baseball{
+  color: black;
+}
+
+h2{
+  color: green !important;
+}
+
+p{
+  background-color: red;
+}
+
+p{
+  background-color: blue;
+}
+
+p{
+  background-color: green;
+}
+
+body{
+  font-size: 30px;
+  background-color: yellowgreen;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>b_input01.html</title>
+</head>
+<body>
+  <h1>input</h1>
+  <h2>text&password</h2>
+  <form>
+    <label>
+      아이디(6자 이상) 
+      <input type="text" size="10" value="devgiants75" />  
+    </label>
+    <br />
+    <label for="password">
+      비밀번호
+    </label>
+    <input type="password" maxlength="8" />
+    
+    <hr />
+
+    <fieldset>
+      <label>
+        아이디<input type="text" id="ueser_id"
+        size="10" />
+      </label>
+      <label>
+        비밀번호
+        <input type="password" id="user_pw" size="10" />
+      </label>
+      <input type="submit" value="로그인" />
+    </fieldset>
+  </form>
+  <h2>2. search & yrl & email & tel</h2>
+  <form>
+    <ul>
+      배송 정보
+      <li>
+        <label for="search-item">상픔 검색</label>
+        <input type="search" id="search-item">
+      </li>
+      <li>
+        <label for="commend-site">구매 추천</label>
+        <input type="url" id="commend-site">
+      </li>
+      <li>
+        <label for="email">구매자 이메일</label>
+        <input type="email" id="email">
+      </li>
+      <li>
+        <label for="phone">구매자 연락처</label>
+        <input type="tel" id="phone">
+      </li>
+    </ul>
+  </form>
+
+  <h2>3. checkbox & radio</h2>
+  <p>2024 프로야구 포스트시즌 진출팀 예측</p>
+  <label>
+    <input type="checkbox" value="giants" checked />
+    롯데 자이언츠
+  </label>
+  <br />
+  <label>
+    <input type="checkbox" value="twins" />
+    트윈스
+  </label>
+  <br />
+  <label>
+    <input type="checkbox" value="heros" />
+    히어로즈
+  </label>
+  
+  <p>
+    2024... 문자 수신동의
+  </p>
+  <label for="agree">동의함</label>
+  <input type="radio" id="agree" name="massage" />
+  <label for="disagree">동의 안 함</label>
+  <input type="radio" id="disagree" name="massage"/>
+</body>
+</html>

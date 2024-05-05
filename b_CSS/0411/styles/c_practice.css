@@ -1,0 +1,28 @@
+body{
+  margin: 0;
+}
+
+header{
+  background-color: brown;
+  height: 100px;
+}
+
+h1{
+  text-align: center;
+  color: white;
+  line-height: 100px;
+  margin: 0;
+}
+
+section{
+  display: flex;
+  flex-direction: row;
+  flex-flow: row;
+}
+article {
+  padding: 10px;
+  margin: 10px;
+  background-color: aliceblue;
+  width: 200px;
+}
+

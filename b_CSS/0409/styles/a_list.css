@@ -1,0 +1,19 @@
+#list-style-type-ul{
+  /* disc, circle */
+  /* list-style-type: square;
+  list-style-position: inside; */
+  list-style: square inside;
+}
+
+#list-style-type-ol{
+  list-style-type:decimal-leading-zero;
+  list-style-type:lower-roman;
+  list-style-type:upper-roman;
+  list-style-type:upper-alpha;
+  list-style-type:lower-alpha;
+  list-style-position: outside;
+}
+
+#list-style-image{
+  list-style-image: url('../../../images/dog.png');
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- ! textarea -->
+  <form action="">
+    <fieldset>
+      <legend>textarea</legend>
+      <label>메모 <textarea cols="40" rows="4"></textarea></label>
+    </fieldset>
+  </form>
+
+  <br />
+  <hr />
+  <br />
+
+  <!-- ! select, option -->
+  <form action="">
+    <fieldset>
+      <legend>select, option</legend>
+      <label>상품선택
+        <select>
+          <option selected>선물용 3kg</option>
+          <option>선물용 5kg</option>
+          <option>가정용 3kg</option>
+          <option>가정용 5kg</option>
+        </select>
+      </label>
+    </fieldset>
+  </form>
+
+  <br />
+  <hr />
+  <br />
+
+  <!-- ! datalist, option -->
+  <form action="">
+    <fieldset>
+      <legend>datalist, option</legend>
+      <label>포장 여부
+        <input type="text" list="pack"> <!--연결 해야함-->
+        <datalist id="pack">
+          <option value="package">선물 포장</option>
+          <option value="no_package">포장 안 함</option>
+        </datalist>
+      </label>
+    </fieldset>
+  </form>
+</body>
+</html>

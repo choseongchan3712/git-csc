@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      width: 400px;
+    }
+    p{
+      width: 500px;
+      height: 200px;
+      background-color: #eee;
+      border: 1px solid #ccc;
+    }
+    #static{
+      position: static;
+    }
+    #relatice1{
+      position: relative;
+    }
+    #relatice2{
+      position: relative;
+      left: 100px;
+      top: -50px;
+    }
+    #fixed{
+      width: 100px;
+      height: 100px;
+      position: fixed;
+      right: 30px;
+      top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <p id="static">position</p>
+  <p id="relatice1">position</p>
+  <p id="relatice2">position</p>
+  <p id="fixed">position</p>
+</body>
+</html>

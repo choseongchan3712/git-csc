@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* div{
+      width: 300px;
+      height: 300px;
+      background-color: aquamarine;
+    }
+    div:hover{
+      width: 400px;
+      height: 400px;
+      transition-duration: 0.5s;
+    } */
+    *{padding: 0; margin: 0;}
+
+    section{
+      width: 700px;
+      overflow: hidden;
+      padding: 30px;
+      border: 3px solid #000;
+      margin: 150px auto;
+    }
+
+    .line{
+      width: 30px;
+      height: 30px;
+      background-color: rgb(249, 75, 104);
+      margin: 10px 0;
+      transition-duration: 0.8s;
+    }
+    section:hover .line{
+      width: 700px;
+    }
+
+    .line:nth-child(1){
+      background-color: rgb(249, 3, 171);
+      /* transition-delay: 0s; */
+      transition-timing-function: linear;
+    }
+    .line:nth-child(2){
+      background-color: rgb(250, 60, 190);
+      /* transition-delay: 1s; */
+      transition-timing-function: ease;
+    }
+    .line:nth-child(3){
+      background-color: rgb(251, 107, 205);
+      /* transition-delay: 2s; */
+      transition-timing-function: ease-in;
+    }
+    .line:nth-child(4){
+      background-color: rgb(252, 156, 222);
+      /* transition-delay: 3s; */
+      transition-timing-function: ease-out;
+    }
+    .line:nth-child(5){
+      background-color: rgb(250, 199, 234);
+      /* transition-delay: 4s; */
+      transition-timing-function: ease-in-out;
+    }
+
+    
+  </style>
+</head>
+<body>
+  <section>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </section>
+</body>
+</html>

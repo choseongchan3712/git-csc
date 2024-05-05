@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>e_table.html</title>
+  <style>
+    table, th, td{
+      border: 1px solid #ccc;
+      border-collapse: collapse;
+    }
+  </style>
+</head>
+<body>
+  <!-- 
+    테이블-- 가로, 세로, 셀 
+    tr 행
+    td 셀
+    th 제목셀, 굵은 글씨
+  -->
+  <table>
+    <caption>표의 제목을 만드는 테그</caption>
+    <tr>
+      <th>1행 1열</th>
+      <th>1행 2열</th>
+      <th>1행 3열</th>
+    </tr>
+    <tr>
+      <td>2행 1열</td>
+      <td>2행 2열</td>
+      <td>2행 3열</td>
+    </tr>
+  </table>
+
+  <table>
+    <caption>학생 출석부</caption>
+    <thead>
+      <tr>
+        <th>이름</th>
+        <th>출석여부</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>이승아</td>
+        <td>참여</td>
+      </tr>
+      <tr>
+        <td>이도경</td>
+        <td>미참여</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>총 참여인원</td>
+        <td>1</td>
+      </tr>
+    </tfoot>
+  </table>
+<hr />
+  <!-- 
+    테이블 병합: rowspan 행합치기, colspan 열 합치기 
+    rowspan="2" 2행 만큼
+  -->
+  <table>
+    <caption>예제</caption>
+    <tr>
+      <td rowspan="2">
+        이셀은 2 확장
+      </td>
+      <td>일반</td>
+    </tr>
+    <tr>
+      
+      <td> 두번째</td>
+    </tr>
+  </table>
+<hr/>
+  <table>
+    <tr>
+      <td colspan="2">이셀은 2열 확장</td>
+      
+    </tr>
+    <tr>
+      <td>2-1</td>
+      <td>2-2</td>
+    </tr>
+  </table>
+</body>
+</html>

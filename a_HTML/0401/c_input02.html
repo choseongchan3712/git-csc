@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>c_input02.html</title>
+</head>
+<body>
+  <!-- submit & reset -->
+  <h1>롯데 자이언츠 유니폼 주문하기</h1>
+  <div id="con" style="width: 500px;">
+  <form action="">
+    <fieldset>배송 정보
+    <ul>
+      <li>
+        <label for="name">이름</label>
+        <input type="text" id="name">
+      </li>
+      <li>
+        <label for="adress">주소</label>
+        <input type="text" id="adress">
+      </li>
+      <li>
+        <label for="email">이메일</label>
+        <input type="email" id="email">
+      </li>
+      <li>
+        <label for="phone">전화번호</label>
+        <input type="tell" id="phone">
+      </li>
+      <li>
+        <label for="day">배송지정</label>
+        <input type="date" id="day">
+      </li>
+      <li>
+        <label for="memo">배송요청</label>
+        <input type="text" id="memo">
+      </li>
+    </ul>
+  </fieldset>
+  <div>
+    <input type="submit" value="주문하기"/>
+    <input type="reset" value="취소하기"/>
+  </div>
+  </form>
+  </div>
+
+  <!-- number & range -->
+  <input type="number" min="0" max="5" />
+  <input type="number" step="3"/>
+  <input type="range" value="10"/>
+  <input type="range" />
+
+  <!-- button 기능 없는 단순 버튼-->
+  <input type="button" value="버튼에 표시할 내용">
+
+  <!-- file -->
+  <input type="file">
+
+  <!-- hidden -->
+  <input type="hidden" name="이름" value="서버로 넘길 값">
+
+</body>
+</html>

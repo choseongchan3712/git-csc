@@ -1,0 +1,9 @@
+h1{
+  color: red;
+  background-color: lightpink;
+}
+
+table, tr, td{
+  border: 1px solid black;
+  border-collapse: collapse;
+}

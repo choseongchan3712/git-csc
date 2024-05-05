@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>b_form.html</title>
+</head>
+<body>
+  <!-- 1. textarea 
+  - name
+  - placeholder
+  - cols: 가로
+  - rows: 세로(줄)
+  -->
+  <h2>textarea</h2>
+  <textarea name="textarea" placeholder="텍스트 작성란입니다" cols="30" rows="10"></textarea>
+
+  <h2>select & option</h2>
+  <select name="fruit" id="" size="2" multiple>
+    <option value="1">apple</option>
+    <option value="2">banana</option>
+    <option value="3">cherry</option>
+    <option value="4" selected>mango</option>
+    <option value="5">orange</option>
+  </select>
+
+  <h2>datalist & option</h2>
+  <input type="text" list="fruit">
+  <datalist id="fruit">
+    <option value="apple">1</option>
+    <option value="banana">2</option>
+    <option value="cherry">3</option>
+  </datalist>
+
+  <h2>button</h2>
+  <input type="submit" value="제출하기" />
+  <input type="reset" value="초기화하기" />
+
+  <button type="submit">제출!</button>
+  <button type="reset">초기화!</button>
+  <button type="button">버튼</button>
+</body>
+</html>

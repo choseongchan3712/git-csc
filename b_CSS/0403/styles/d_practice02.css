@@ -1,0 +1,12 @@
+body{
+  background-color: lightblue;
+}
+
+.parent{
+  background-image: url(../../../images/dog.png);
+  padding: 20px;
+}
+.child{
+  padding: 20px;
+  border: 1px solid black;
+}
